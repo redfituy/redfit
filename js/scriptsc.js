@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnEditar6 = document.querySelector("#btnEditar6");
 
     // selecciono el div de los ejercicios
-    const ejercicios = document.querySelector("#ejercicios");
+    //const ejercicios = document.querySelector("#ejercicios");
     var cantidadejercicio = "0";
     var indiceejercicio = "0";
     // selecciono los items actuales
@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // asignar los valores de los controles a fila en edicion
         items[1].textContent = ContadorS.textContent;
         items[2].textContent = ContadorR.value;
-        items[3].textContent = descanso.value;
-        items[4].textContent = metodologia.value;
+        items[3].textContent = metodologia.value;
+        items[4].textContent = descanso.value;
         items[5].textContent = notas.value;
 
         //items[0].disabled = true;
