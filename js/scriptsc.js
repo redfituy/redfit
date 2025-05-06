@@ -49,7 +49,35 @@ document.addEventListener("DOMContentLoaded", function() {
     // var ejercicio = document.querySelector(`#ejercicio${indiceejercicio}`);
 
     // funcion de limpieza de controles
-     function  limpiarControles() {}
+    function  limpiarControles() {
+
+        if(cbBrazos.checked) {
+            listaBrazos.classList.add("hidden");
+            listaBrazos.value = "";
+            cbBrazos.checked = false;
+        }
+        if(cbEspalda.checked) {
+            listaEspalda.classList.add("hidden");
+            listaEspalda.value = "";
+            cbEspalda.checked = false;
+        }
+        if(cbPecho.checked) {
+            listaPecho.classList.add("hidden");
+            listaPecho.value = "";
+            cbPecho.checked = false;
+        }
+        if(cbPiernas.checked) {
+            listaPiernas.classList.add("hidden");
+            listaPiernas.value = "";
+            cbPiernas.checked = false;
+        }
+
+        ContadorS.textContent = "3";
+        ContadorR.value = "";
+        metodologia.value = "";
+        descanso.value = "";
+        notas.value = "";
+     }
 
     // funcion auxiliar de los botones editar
     function auxEdit(e) {
@@ -59,10 +87,27 @@ document.addEventListener("DOMContentLoaded", function() {
         // asignamos el indice del ejercicio al ejercicio actual
         //console.log(e.target.getAttribute("numej"));
         indiceejercicio = parseInt(e.target.getAttribute("numej"));
+        //indiceejercicio = e.target.getAttribute("numej");
+        //indiceejercicio = event.target.getAttribute("numej");
         // asignamos los items actuales
         items = document.querySelectorAll(`p.item${indiceejercicio}, button.item${indiceejercicio}`);
 
-        // limpiarControles();
+        //cargo los controles con la informacion del ejercicio
+        if(items.length == 0 ) {
+            console.log("arreglo vacio");
+            console.log("indice ejercicio:");
+            console.log(indiceejercicio);
+            console.log("e.target: ");
+            console.log(e.target);
+            
+        }
+        items[0].textContent = "seleccione ejercicio";
+        ContadorS.textContent = items[1].textContent;
+        ContadorR.value = items[2].textContent;
+        metodologia.value = items[3].textContent // revisar si la opcion original sigue ahi
+        descanso.value = items[4].textContent; // el formato servira?
+        notas.value = items[7].textContent;
+
 
     }
 
@@ -77,6 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
         indiceejercicio = cantidadejercicio; 
         // asignamos los items actuales
         items = document.querySelectorAll(`p.item${indiceejercicio}, button.item${indiceejercicio}`);
+        // asignamos un valor por defecto al ejercicio para evitar errores
+        items[0].textContent = "seleccione ejercicio";
 
         //mostramos los elementos nuevos
         items[0].classList.remove("hidden");
@@ -96,11 +143,13 @@ document.addEventListener("DOMContentLoaded", function() {
         items[2].textContent = ContadorR.value;
         items[3].textContent = metodologia.value;
         items[4].textContent = descanso.value;
-        items[5].textContent = notas.value;
+        items[7].textContent = notas.value;
 
         //items[0].disabled = true;
         // cerrar el modal
         modalExer.close();
+        // limpiamos los controles
+        limpiarControles();
     });
     // evento de los botones editar ejercicios
     btnEditar1.addEventListener("click",(e)=>{  auxEdit(e); });
@@ -183,19 +232,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // eventos de los botones mas y menos repeticiones
-    menosR.addEventListener("click",(e)=>{
-        var res = parseInt(ContadorR.textContent)-1;
-        ContadorR.textContent = res.toString();        
-    });
-    masR.addEventListener("click",(e)=>{
-        var res = parseInt(ContadorR.textContent)+1;
-        ContadorR.textContent = res.toString();        
-    });
-
-
-
-
-
+    //menosR.addEventListener("click",(e)=>{
+        //var res = parseInt(ContadorR.textContent)-1;
+        //ContadorR.textContent = res.toString();        
+    //});
+    //masR.addEventListener("click",(e)=>{
+        //var res = parseInt(ContadorR.textContent)+1;
+        //ContadorR.textContent = res.toString();        
+    //});
 
 });
 
