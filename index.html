@@ -36,17 +36,17 @@
                     <source loading="lazy"  srcset="img/letras/letras_color1.png" type="image/webp">
                     <img loading="lazy" src="img/letras/letras_color1.png" alt="imagen logo">
                 </picture>
-                <div>
-                    <nav class="navegacion">
-                        <!--<a href="index.html" class="navegacion__enlace">Por qué RedFit</a>
-                        <a href="#faq" class="navegacion__enlace">Preguntas frecuentes</a>
-                        <a href="#planes" class="navegacion__enlace">Planes</a>
-                        <a href="index.html" class="navegacion__enlace">Blog</a>
-                        <a href="creador.html" class="navegacion__enlace">creador</a>
-                        -->
-                        
-                    </nav>
-                    <div class="redes">
+            
+                <!--<nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace">Por qué RedFit</a>
+                    <a href="#faq" class="navegacion__enlace">Preguntas frecuentes</a>
+                    <a href="#planes" class="navegacion__enlace">Planes</a>
+                    <a href="index.html" class="navegacion__enlace">Blog</a>
+                    <a href="creador.html" class="navegacion__enlace">creador</a>
+                </nav>-->
+                    
+            </div>
+            <div class="redes">
                         <a class="icono" href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0">
                             <picture>
                                 <source loading="lazy"  srcset="img/redes/whredondo.png" type="image/webp">
@@ -83,12 +83,7 @@
                                 <img loading="lazy" src="img/redes/xredondo.png" alt="imagen x" width="30px">
                             </picture>
                         </a>
-                        
                     </div>
-                    
-                </div>
-                
-            </div>
         </div>
 
         <div class="header__texto">
@@ -105,7 +100,7 @@
 
     <div class="contenedor contenido-principal">
         
-        <main class="main" id="faq">
+        <main class="main">
             
             <h2>Entrena con Nosotros</h2>
             <h3>Nuestros Planes</h3>
@@ -118,7 +113,8 @@
             </a>
 
 
-            <ul class="planes no-padding">
+            <div class="contenedorslide" id="slide">
+                <ul class="planes no-padding">
                 <li class="widget-plan">
                     <h4 class="no-margin">Rutina de entrenamiento personalizada</h4>
                     <p class="widget-plan__label">Precio: 
@@ -192,7 +188,29 @@
                     </p>
                     <a href="entrada.html" class="boton boton--secundario">Suscribirse</a>
                 </li>
-            </ul>
+                </ul>
+                <ol id="paginacion">
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                </ol>
+                <div class="arrow" id="prev">
+                    <img loading="lazy" src="img/iconos/arrow1.png" alt="imagen flecha" width="20px" height="25px">
+                </div>
+                <div class="arrow" id="next">
+                    <img loading="lazy" src="img/iconos/arrow2.png" alt="imagen flecha" width="20px" height="25px">
+                </div>
+            </div>
+            
 
             <!--<div id="planes">
                 <picture>
@@ -209,10 +227,10 @@
 
             <div class="pregunta">
                 <p>¿para quiénes está dirigido este servicio?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
-                <p class="txt">
+                <p>
                     Para todas aquellas personas que busquen uno o varios de los siguientes objetivos: <br>
                     bajar de peso, <br>
                     aumentar la masa muscular, <br>
@@ -227,10 +245,10 @@
             </div>
             <div class="pregunta">
                 <p>¿Qué incluye la suscripción al servicio de personalizado en línea?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
-                <p class="txt">
+                <p>
                     Cuestionario previo para el armado del plan de entrenamiento y/o nutricional <br>
                     plan de entrenamiento y/o nutricional <br>
                     periodización del entrenamiento <br>
@@ -243,7 +261,7 @@
 
             <div class="pregunta">
                 <p>¿Qué tipo de entrenamientos online ofrecen?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -253,7 +271,7 @@
 
             <div class="pregunta">
                 <p>¿Dónde y cuándo se realizan los entrenamientos?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -263,7 +281,7 @@
 
             <div class="pregunta">
                 <p>¿Cuánto tiempo dura cada sesión de entrenamiento?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -273,7 +291,7 @@
 
             <div class="pregunta">
                 <p>¿Cuántos días a la semana debo entrenar?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -283,7 +301,7 @@
 
             <div class="pregunta">
                 <p>¿Se pueden hacer modificaciones en el plan si tengo una lesión o limitación física?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -293,7 +311,7 @@
 
             <div class="pregunta">
                 <p>¿Cuándo se realiza la entrevista para el armado de planes y cuando los obtengo una vez que me suscriba o active una suscripción?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -302,7 +320,7 @@
             </div>
             <div class="pregunta">
                 <p>¿Realizan reembolso del dinero en caso de cancelar la suscripción?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -325,12 +343,6 @@
                     <source loading="lazy"  srcset="img/letras/letras_color1.png" type="image/webp">
                     <img loading="lazy" src="img/letras/letras_color1.png" alt="imagen logo">
                 </picture>
-                
-                <a href="creador.html" class="navegacion__enlace">creador</a>
-
-                <!--<a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Red<span class="logo__bold">Fit</span></h1>
-                </a>-->
 
                 <!--<nav class="navegacion">
                     <a href="index.html" class="navegacion__enlace">Por qué RedFit</a>
