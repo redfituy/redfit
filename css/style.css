@@ -21,6 +21,7 @@ html {
 body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
+    font-size: 1rem; /**cambio de fuente*/
     line-height: 2;
 
     background-color: rgb(131, 172, 200);
@@ -46,21 +47,26 @@ h1, h2, h3, h4 {
 }
 h1 {
     font-size: 4.8rem;
+    font-size: 2.8rem;
 }
 h2 {
     font-size: 4rem;
+    font-size: 2.4rem;
 }
 h3 {
     font-size: 3.2rem;
+    font-size: 2rem;
 }
 h4 {
     font-size: 2.8rem;
+    font-size: 1.6rem;
 }
 img {
     max-width: 100%;
 }
 .textogrande {
     font-size: 2.8rem;
+    font-size: 1.7rem;
 }
 
 
@@ -228,6 +234,7 @@ img {
     display: block;
     text-align: center;
     font-size: 1.8rem;
+    font-size: 1.1rem; /**cambio de fuente*/
     color: var(--blanco);
 }
 
@@ -274,6 +281,7 @@ img {
     text-align: center;
     padding: 1rem 3rem;
     font-size: 1.8rem;
+    font-size: 1.1rem; /**cambio de fuente*/
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -341,6 +349,7 @@ img {
 .curso__label,
 .curso__info {
     font-size: 2rem;
+    font-size: 1.25rem; /**cambio de fuente*/
 }
 
 /** Contacto **/
@@ -589,6 +598,7 @@ img {
 .widget-plan__label,
 .widget-plan__info {
     font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 /* banner carousel */
@@ -668,6 +678,7 @@ ul, ol {
     text-align: center;
     line-height: 12px;
     font-size: 15px;
+    font-size: 9px;
     left: 0;
     z-index: 1;
     bottom: 10px;
