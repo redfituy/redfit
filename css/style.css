@@ -107,7 +107,7 @@ img {
 /**@media (min-width: 768px) {**/
     .webp .header {
         /*background-image: url(../img/banner2.jpeg);*/
-        background-image: linear-gradient(rgba(0, 45, 85, 0.7), rgba(3, 66, 103, 0.274)), url(../img/banner2.jpeg);
+        background-image: linear-gradient(rgba(0, 45, 85, 0.7), rgba(3, 66, 103, 0.274)), url(../img/banner2.jpg);
     }    
 /**}**/
 
@@ -170,6 +170,8 @@ img {
     display:flex;
     height: 25%;
     width: 25%;
+    min-height: 15rem;
+        min-width: 15rem;
     /*max-height: 40%;
     max-width: 40%;*/
 }

@@ -108,6 +108,6 @@ window.onload = function() {
             } else {
                 avanzar();
             }
-        }, 3000)
+        }, 6000)
     }
 }
