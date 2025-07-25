@@ -154,24 +154,25 @@ img {
     /**vertical-align: middle;
     text-align: center;*/
     display: flex;
-    justify-content: space-evenly;
-    /**align-items: center;*/
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    align-items: center;
 }
-/**
+
 @media (min-width: 768px) {
     .barra {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
     }
-}*/
+}
 
 .logor {
     display:flex;
     height: 25%;
     width: 25%;
     min-height: 15rem;
-        min-width: 15rem;
+    min-width: 15rem;
     /*max-height: 40%;
     max-width: 40%;*/
 }
