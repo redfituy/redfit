@@ -711,21 +711,7 @@ ul, ol {
     opacity: 1;
 }
 
-/*testimoniales*/
-.testimoniales {
-    margin-top: 5rem;
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
-    background-color: var(--azuloscuro);
-    display: flex;
-    justify-content:space-around;
-}
 
-.testimonio {
-    max-width: 40rem;
-    min-width: 40rem;
-}
 
 /*
 .logor {
@@ -748,3 +734,110 @@ ul, ol {
         min-width: 15rem;
     }  
 }*/
+
+/*testimoniales*/
+/*.testimoniales {
+    margin-top: 5rem;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background-color: var(--azuloscuro);
+    display: flex;
+    justify-content:space-around;
+}*/
+
+
+/** testimonios */
+.contenedor-testimoniales {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    max-width: 768px; /*extra*/
+}
+
+.testimoniales{
+    position: relative;
+    left: 0%;
+    margin: auto;
+    height: auto;
+    /*width: 600%;*/
+    clear: both;
+    transition: left 500ms ease;
+    -moz-transition: 500ms ease;
+    -o-transition: 500ms ease;
+
+    display: flex;
+
+}
+
+.testimonio {
+    
+    /*max-width: 40rem; /** extra */
+    /*min-width: 40rem; /** extra */
+    /*min-width: 768px; /**extra*/
+    /*max-width: 384px;*/
+
+    position: relative;
+    float: left;
+    /*width: 25%;*/
+    /*width: 100%;*/
+    width: 768px; /*extra2*/
+    width: 100%; /*extra2*/
+    min-width: 768px; /*extra2*/
+    object-fit: contain;
+    /*max-width: 16.67%;*/
+    /*8/8*/
+    /*el tamaño minimo debe ser un tercio del ancho y al crecer la pantalla es un sexto*/
+    min-width: 33.333%;
+
+}
+
+#contenedortestimoniales .arrow {
+    position: absolute;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    padding: 30px 10px;
+    background: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+#contenedortestimoniales #prevt {
+    left: 0%;
+}
+
+#contenedortestimoniales #nextt {
+    right: 0%;
+}
+
+.testimonio2 {
+    position: relative;
+    float: left;
+
+    max-width: 768px; /**extra*/
+    width: 768px; /*extra2*/
+}
+
+@media (min-width: 1000px) {
+    
+    .testimonio {
+        min-width: 384px; /*extra2*/
+        max-width: 384px;
+        /*padding: 1rem;*/
+        /*8/8*/
+        /*el tamaño minimo debe ser un tercio del ancho y al crecer la pantalla es un sexto*/
+        min-width: 16.5%;
+    
+    }
+    .testimonio2 {
+        max-width: 384px;
+        /*padding: 1rem;*/
+        /*8/8*/
+        /*el tamaño minimo debe ser un tercio del ancho y al crecer la pantalla es un sexto*/
+        min-width: 16.665%;
+    }
+}

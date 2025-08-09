@@ -45,7 +45,7 @@ window.onload = function() {
         let elementoLi = document.querySelectorAll('#slide ul li');
         let detenerCiclo = false;
 
-        console.log(elementoLi);
+        /**console.log(elementoLi);*/
         /** width ul li */
         for ( let i = 0; i < elementoLi.length; i++ ) {
 
@@ -110,4 +110,80 @@ window.onload = function() {
             }
         }, 6000)
     }
+
+    // seccion de testimoniales
+    if (document.querySelector('#contenedortestimoniales') != null) {
+
+        let actual = 0; // item
+        // itempaginacion no va
+        let conjunto = document.querySelector('#testimoniales'); //elementoul
+        let caso = document.querySelectorAll('.testimonio'); // elementoli
+        let stopCiclo = false;
+
+        // console.log(caso); // deberia mostrar las 3 pictures
+
+        /** width de las pictures */
+        for ( let i = 0; i < caso.length; i++ ) {
+
+            let xx = 100 / caso.length;
+            caso[i].style.width = `${xx}%`;
+        }
+        let cW = 100 * caso.length;
+        conjunto.style.width = `${cW}%`;
+
+        // movimiento
+        /** funcion movimiento */
+        function movimientoSlide(item) {
+            //for (let i = 0; i < itempaginacion.length; i++ ) {
+                //itempaginacion[i].style.opacity = '0.5';
+            //}
+            //itempaginacion[item].style.opacity = '1';
+            let lf = item * 100;
+            conjunto.style.left = `-${lf}%`;
+        }
+
+        /** intervalo de tiempo */
+        setInterval(function() {
+            if(stopCiclo) {
+                stopCiclo = false;
+            } else {
+                avanzar();
+            }
+        }, 2000)
+
+        /**///////////////////////////////////////////////////////////////////
+
+        /** funcion avanzar */
+        function avanzar() {
+            if (actual == caso.length - 1 ) {
+                actual = 0;
+            } else {
+                actual++;
+            }
+            movimientoSlide(actual);
+        }
+
+        /** avanzar */
+        document.querySelector('#nextt').addEventListener('click', ()=> {
+            avanzar();
+            detenerCiclo = true;
+        })
+        /** retroceder */
+        document.querySelector('#prevt').addEventListener('click', ()=> {
+            if (actual == 0) {
+                actual = caso.length - 1;
+            } else {
+                actual--;
+            }
+            movimientoSlide(actual);
+            stopCiclo = true;
+        })
+
+        // podemos duplicar el carrusel de testimonios y correrle una posicion al segundo carrusel y achicamos ambos a partir de los 768px 
+        // esto generará que el segundo carrusel entre en la pantalla y se puedan ver dos testimonios a la vez en pc
+        // la otra opcion es: duplico las fotos de modo que siempre van a ser par y solo cambio es tamaño a los 768px
+
+        // hay que ver como hacer para que la imagen tenga el ancho del 100% y no se mueva cortada
+    }
 }
+
