@@ -20,7 +20,7 @@ html {
 }
 body {
     font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
+    /*font-size: 1.6rem;*/
     font-size: 1rem; /**cambio de fuente*/
     line-height: 2;
 
@@ -68,6 +68,7 @@ img {
     font-size: 2.8rem;
     font-size: 1.7rem;
 }
+
 
 
 /** Utilidades **/
@@ -240,7 +241,7 @@ img {
 .navegacion__enlace {
     display: block;
     text-align: center;
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
     font-size: 1.1rem; /**cambio de fuente*/
     color: var(--blanco);
 }
@@ -287,7 +288,7 @@ img {
     color: var(--blanco);
     text-align: center;
     padding: 1rem 3rem;
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
     font-size: 1.1rem; /**cambio de fuente*/
     text-transform: uppercase;
     font-weight: 700;
@@ -313,15 +314,9 @@ img {
     letter-spacing: 1px;
     border-radius: 0.6rem;
     width: 100%;
-}
-
-
-
-.footer {
-    background-color: var(--negro);
-    padding-bottom: 3rem;
-    margin-top: 4rem;
-    min-height: 250px;
+    /*position: absolute;
+    bottom: 20px;*/
+    margin-top: 5rem;
 }
 
 /** Sobre Nosotros **/
@@ -357,7 +352,7 @@ img {
 }
 .curso__label,
 .curso__info {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     font-size: 1.25rem; /**cambio de fuente*/
 }
 
@@ -583,6 +578,7 @@ img {
     background-color: rgb(28, 41, 57);
     /*width: 40rem;*/
     width: 100%;
+    min-height: 468px;
     border-radius: 0.6rem;
     /*margin: 2rem;*/
     margin-bottom: 2rem;
@@ -591,6 +587,7 @@ img {
     /**min-height: 534px;*/
     /*display: flex;
     align-items: center;*/
+    position: relative;
 }
 
 .widget-plan:last-of-type {
@@ -608,7 +605,7 @@ img {
 .widget-plan__label,
 .widget-plan__info {
     font-size: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.25rem; /*fuente*/
 }
 
 .widget-plan h4 {
@@ -695,7 +692,8 @@ ul, ol {
     font-size: 9px;
     left: 0;
     z-index: 1;
-    bottom: 10px;
+    /*bottom: 10px;*/
+    top: 10px;
 }
 
 #slide #paginacion li {
@@ -749,12 +747,15 @@ ul, ol {
 
 /** testimonios */
 .contenedor-testimoniales {
+
     position: relative;
     margin: auto;
     width: 100%;
     overflow: hidden;
     padding: 0;
     max-width: 768px; /*extra*/
+    margin-top: 10rem; /*extra*/
+    margin-bottom: 10rem; /*extra*/
 }
 
 .testimoniales{
@@ -839,5 +840,74 @@ ul, ol {
         /*8/8*/
         /*el tamaño minimo debe ser un tercio del ancho y al crecer la pantalla es un sexto*/
         min-width: 16.665%;
+    }
+}
+
+.footer {
+    background-color: var(--azuloscuro);
+    margin-top: 4rem;
+    min-height: 250px;
+    height: 250px;
+}
+.barra_footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content:space-around;*/
+    position: relative;
+}
+.contenedor_footer {
+    background-color: var(--negro);
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+    padding-left: 10vw;
+    position: absolute;
+    bottom: 0%;
+}
+.texto_footer {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.letrasf img {
+    height: 15rem;
+    max-height: 15rem;
+    padding-left: 5vw;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 4.8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 3.2rem;
+    }
+    h4 {
+        font-size: 2.8rem;
+    }
+    .textogrande {
+        font-size: 2.8rem;
+    }
+    .navegacion__enlace {
+        font-size: 1.8rem;
+    }
+    .boton {
+        font-size: 1.8rem;
+    }
+    .curso__info {
+        font-size: 2rem;
+    }
+    .widget-plan__info {
+        font-size: 2rem;
+    }
+    .texto_footer {
+        font-size: 2rem;
     }
 }
