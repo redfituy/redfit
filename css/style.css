@@ -69,8 +69,6 @@ img {
     font-size: 1.7rem;
 }
 
-
-
 /** Utilidades **/
 .no-margin {
     margin: 0;
@@ -141,15 +139,6 @@ img {
         margin-top: 15rem;
     }
 }
-/**@media (min-width: 768px) {
-    .contenedor {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-}*/
-
 
 .barra {
     
@@ -209,14 +198,7 @@ img {
     justify-content: center;
 
 }
-/**@media (min-width: 768px) {
-    .redes {
-        width: 20rem;
-        /*max-width: 25rem;*/
-        /*display: flex;
-        justify-content: space-between;
-    }    
-}*/
+
 .icono {
     margin: 0.3rem;
 
@@ -247,17 +229,6 @@ img {
     color: var(--blanco);
 }
 
-/*suspendido por slides*/
-/*
-@media (min-width: 768px) {
-    .contenido-principal {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 4rem;
-    }
-}*/
-
 .contenido-principal{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -272,8 +243,6 @@ img {
 
     }
 }
-
-
 
 .entrada {
     border-bottom: 1px solid var(--gris);
@@ -449,25 +418,6 @@ img {
 .girar {
     transform: rotate(45deg);
 }
-
-
-/**clip-path: inset(1rem 2rem 3rem 4rem);*/
-
-/**.letras {
-    display:flex;
-    min-height: 20rem;
-    height: 20rem;
-}*/
-/*
-.redes {
-    width: 20rem;
-    display: flex;
-    justify-content: space-between;
-}*/
-
-
-/**{}**/
-
 
 /*rutinas*/
 .rutina {
@@ -709,41 +659,6 @@ ul, ol {
 #slide #paginacion li:first-child {
     opacity: 1;
 }
-
-
-
-/*
-.logor {
-    display:flex;
-    height: 25%;
-    width: 25%;
-    min-height: 15rem;
-    min-width: 15rem;
-    
-}
-@media (min-width: 768px) { 
-    .logor {
-        object-fit: contain;
-        height: 15rem;
-        
-        width: 15rem;
-    }
-    .logor img {
-        min-height: 15rem;
-        min-width: 15rem;
-    }  
-}*/
-
-/*testimoniales*/
-/*.testimoniales {
-    margin-top: 5rem;
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
-    background-color: var(--azuloscuro);
-    display: flex;
-    justify-content:space-around;
-}*/
 
 
 /** testimonios */
