@@ -526,11 +526,12 @@ img {
     margin-bottom: 2rem;*/
     /*background-color: var(--naranja);*/
     /*background-color: var(--azulmedio);*/
-    background-color: rgb(28, 41, 57);
+    /*background-color: rgb(28, 41, 57);*/
+    /*fondoplan1*/
     /*width: 40rem;*/
     width: 100%;
     min-height: 468px;
-    border-radius: 0.6rem;
+    /*border-radius: 0.6rem;*/
     /*margin: 2rem;*/
     margin-bottom: 2rem;
     padding: 6rem;
@@ -826,4 +827,9 @@ ul, ol {
     .texto_footer {
         font-size: 2rem;
     }
+}
+
+.contenedorslide {
+    background-image: linear-gradient(rgba(0, 34, 65, 0.909), rgba(3, 66, 103, 0.274)), url(../img/fondoplan1.png);
+    border-radius: 0.6rem;
 }
