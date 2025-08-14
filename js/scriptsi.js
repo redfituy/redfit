@@ -185,5 +185,51 @@ window.onload = function() {
 
         // hay que ver como hacer para que la imagen tenga el ancho del 100% y no se mueva cortada
     }
+
+    // texto del llamador de mensajes ///////////////////////////////////////////////////////////////////////////////
+    const texts = [
+        "quiero comenzar a entrenar !"
+        //"Hola, mundo!",
+        //"Aprende desarrollo web",
+        //"Crea algo increíble",
+    ];
+    const typingSpeed = 100; // Velocidad de escritura (ms)
+    const erasingSpeed = 50; // Velocidad de borrado (ms)
+    const delayBetweenTexts = 1500; // Pausa entre textos (ms)
+
+    let currentTextIndex = 0; // Índice del texto actual
+    let charIndex = 0; // Índice del carácter actual
+    const textElement = document.getElementById("text");
+
+    function typeText() {
+        if (charIndex < texts[currentTextIndex].length) {
+            // Añade una letra al texto
+            textElement.textContent += texts[currentTextIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, typingSpeed); // Llama a la función nuevamente
+        } else {
+            // Pausa antes de borrar
+            setTimeout(eraseText, delayBetweenTexts);
+        }
+    }
+
+    function eraseText() {
+        if (charIndex > 0) {
+            // Elimina una letra del texto
+            textElement.textContent = texts[currentTextIndex].substring(
+                0,
+                charIndex - 1
+            );
+            charIndex--;
+            setTimeout(eraseText, erasingSpeed); // Llama a la función nuevamente
+        } else {
+              // Cambia al siguiente texto
+            currentTextIndex = (currentTextIndex + 1) % texts.length;
+            setTimeout(typeText, typingSpeed);
+        }
+    }
+
+    // Inicia la animación
+    typeText();
 }
 
