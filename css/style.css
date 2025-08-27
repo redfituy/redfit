@@ -299,6 +299,7 @@ img {
     /*position: absolute;
     bottom: 20px;*/
     margin-top: 5rem;
+    background-color: darkgoldenrod;
 }
 
 /** Sobre Nosotros **/
@@ -863,6 +864,13 @@ ul, ol {
     font-weight: bold;
     color: #333;
 }*/
+
+.text-container {
+    background-color: var(--azulmedio);
+    border-radius: 1rem;
+    opacity: 80%;
+}
+
 .cursor {
     display: inline-block;
     width: 5px;
@@ -874,4 +882,9 @@ ul, ol {
     50% {
         opacity: 0;
     }
+}
+
+.precio {
+    font-weight: bold;
+    color: darkgoldenrod;
 }
