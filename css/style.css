@@ -102,9 +102,16 @@ img {
     min-width: 10rem;
 
     text-align: center;
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;
+    color: #e1e1e1;*/
+    /*nuevo*/
+    color: var(--negro);
+    padding: 0.5rem;
+    line-height: 0.81;
+    font-family: var(--fuenteParrafos);
     font-weight: bold;
-    color: #e1e1e1;
+    font-size: 1.6rem;
+
 }
 
 /** Header **/
@@ -897,6 +904,7 @@ ul, ol {
 
 .text-container {
     background-color: var(--azulmedio);
+    background-color: var(--blanco);
     border-radius: 1rem;
     opacity: 80%;
 }
