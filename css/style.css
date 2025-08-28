@@ -892,7 +892,9 @@ ul, ol {
 }
 
 .contenedorslide {
-    background-image: linear-gradient(rgba(0, 34, 65, 0.909), rgba(3, 66, 103, 0.274)), url(../img/fondoplan1.png);
+    /*background-image: linear-gradient(rgba(0, 34, 65, 0.909), rgba(3, 66, 103, 0.274)), url(../img/fondoplan1.png);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.993), rgba(3, 66, 103, 0.274) 30%), url(../img/fondoplan1.png);
+    /*background-image: linear-gradient(var(--azuloscuro), transparent 30%), url(../img/fondoplan1.png);*/
     border-radius: 0.6rem;
 }
 
