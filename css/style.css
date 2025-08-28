@@ -926,3 +926,23 @@ ul, ol {
     font-weight: bold;
     color: darkgoldenrod;
 }
+
+/*planes*/
+.renglon-plan {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.icono-plan {
+    margin-right: 2rem;
+}
+
+.recomendado {
+    background-color: var(--azulclaro);
+    font-size: 2rem;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: var(--azuloscuro);
+}
