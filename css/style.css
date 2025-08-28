@@ -888,6 +888,7 @@ ul, ol {
     .texto_footer {
         font-size: 2rem;
     }
+    
 }
 
 .contenedorslide {
@@ -931,18 +932,28 @@ ul, ol {
 .renglon-plan {
     display: flex;
     align-items: center;
-    height: 4rem;
+    /*height: 4rem;*/
+}
+.interlineado-corto {
+    line-height: 1.3;
 }
 
 .icono-plan {
     margin-right: 2rem;
+    min-width: 30px;
+    min-height: 30px;
 }
 
 .recomendado {
     background-color: var(--azulclaro);
-    font-size: 2rem;
+    font-size: 1.3rem;
     border-radius: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     color: var(--azuloscuro);
+}
+@media (min-width: 768px) {
+    .recomendado {
+        font-size: 2rem;
+    }
 }
