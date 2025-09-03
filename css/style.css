@@ -24,7 +24,7 @@ body {
     font-size: 1rem; /**cambio de fuente*/
     line-height: 2;
 
-    background-color: rgb(131, 172, 200);
+    background-color: var(--azulclaro);
     p {
         color: rgb(232, 225, 225);
         /**color: rgb(28, 41, 57);**/
@@ -402,7 +402,7 @@ img {
     width: 100%;
     border-radius: 0.6rem;
     /*background-color: rgb(50, 167, 235);*/ 
-    background-color: rgb(28, 41, 57);
+    background-color: var(--azuloscuro);
     /*padding-left: 4rem;*/
     padding-left: 10%;
     /*padding-right: 4rem;*/
@@ -953,9 +953,26 @@ ul, ol {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     color: var(--azuloscuro);
+    margin-left: 1rem;
 }
 @media (min-width: 768px) {
     .recomendado {
         font-size: 2rem;
     }
+}
+
+/** tema oscuro */
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: var(--azulclaro);
+    }
+    .pregunta {
+        background-color: var(--azuloscuro);
+    }
+
+    .boton--secundario {
+        background-color: darkgoldenrod;
+    }
+
 }
