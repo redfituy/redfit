@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogDeCafé</title>
-    <meta name="description" content="Página web de blog de café">
+    <title>Redfit</title>
+    <meta name="description" content="Página web de entrenamientos personalizados">
 
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
@@ -16,8 +16,11 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     
+    <link rel="shortcut icon" href="/img/logoOrigTrsp.png" />
+
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -36,17 +39,17 @@
                     <source loading="lazy"  srcset="img/letras/letras_color1.png" type="image/webp">
                     <img loading="lazy" src="img/letras/letras_color1.png" alt="imagen logo">
                 </picture>
-                <div>
-                    <nav class="navegacion">
-                        <!--<a href="index.html" class="navegacion__enlace">Por qué RedFit</a>
-                        <a href="#faq" class="navegacion__enlace">Preguntas frecuentes</a>
-                        <a href="#planes" class="navegacion__enlace">Planes</a>
-                        <a href="index.html" class="navegacion__enlace">Blog</a>
-                        <a href="creador.html" class="navegacion__enlace">creador</a>
-                        -->
-                        
-                    </nav>
-                    <div class="redes">
+            
+                <!--<nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace">Por qué RedFit</a>
+                    <a href="#faq" class="navegacion__enlace">Preguntas frecuentes</a>
+                    <a href="#planes" class="navegacion__enlace">Planes</a>
+                    <a href="index.html" class="navegacion__enlace">Blog</a>
+                    <a href="creador.html" class="navegacion__enlace">creador</a>
+                </nav>-->
+                    
+            </div>
+            <div class="redes">
                         <a class="icono" href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0">
                             <picture>
                                 <source loading="lazy"  srcset="img/redes/whredondo.png" type="image/webp">
@@ -83,12 +86,7 @@
                                 <img loading="lazy" src="img/redes/xredondo.png" alt="imagen x" width="30px">
                             </picture>
                         </a>
-                        
                     </div>
-                    
-                </div>
-                
-            </div>
         </div>
 
         <div class="header__texto">
@@ -97,7 +95,7 @@
             <p class="no-margin">Entrena con los expertos con un enfoque con bases científicas</p>
             <p>Entrena con los expertos con un enfoque con bases científicas</p>
             -->
-            <h1>Diseñamos tu éxito, rep a rep</h2>
+            <h1>Diseñamos tu éxito, rep a rep</h1>
             
             <p class="textogrande">Entrena con expertos que aplican un enfoque respaldado por la ciencia</p>
         </div>
@@ -105,12 +103,19 @@
 
     <div class="contenedor contenido-principal">
         
-        <main class="main" id="faq">
+        <main class="main">
             
-            <h2>Entrena con Nosotros</h2>
-            <h3>Nuestros Planes</h3>
+            <!--<h2>Entrena con Nosotros</h2>-->
+            <h2>Es momento de tomar acción</h2>
+            <h3>Conoce Nuestros Planes</h3>
 
             <a id="btnfijo" class="icono" href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0">
+                <!--<p class="txtbtnfijo">quiero comenzar a entrenar</p>-->
+
+                <div class="text-container txtbtnfijo">
+                    <span id="text"></span><span class="cursor"></span>
+                </div>
+
                 <picture>
                     <source loading="lazy"  srcset="img/redes/whredondo.png" type="image/webp">
                     <img loading="lazy" src="img/redes/whredondo.png" alt="imagen whatsapp" width="50px" height="50px">
@@ -118,81 +123,239 @@
             </a>
 
 
-            <ul class="planes no-padding">
+            <div class="contenedorslide" id="slide">
+                <ul class="planes no-padding">
                 <li class="widget-plan">
-                    <h4 class="no-margin">Rutina de entrenamiento personalizada</h4>
+                    <!--<h4 class="no-margin">Rutina de entrenamiento personalizada</h4>-->
+                    <h4 class="no-margin">PLAN STANDARD</h4>
                     <p class="widget-plan__label">Precio: 
-                        <span class="widget-curso__info">U$D 36</span>
+                        <span class="widget-curso__info precio">U$D 36</span>
                     </p>
-                    <p class="widget-plan__label">incluye:
-                        <span class="widget-plan__info">
-                            Rutina de entrenamiento personalizada<br>
-                        </span>
-                    </p>
+                    <p class="widget-plan__label">incluye: </p>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/mancuernas1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Rutina de entrenamiento personalizada<br>
+                            </span>
+                        </p>
+                    </div>
+                    
+
                     <!--<p class="widget-plan__label">Cupos: 
                         <span class="widget-plan__info">si</span>
                     </p>-->
-                    <a href="entrada.html" class="boton boton--secundario">Comprar</a>
+                    <a href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0&text=hola!" class="boton boton--secundario">Comprar</a>
                 </li>
 
                 <li class="widget-plan">
-                    <h4 class="no-margin">Plan de entrenamiento personalizado en línea</h4>
+                    <h4 class="no-margin sombra">PLAN PLUS<span class="recomendado">Recomendado</span></h4>
+                    <!--<h4 class="no-margin">Plan de entrenamiento personalizado en línea</h4>-->
+
                     <p class="widget-plan__label">Precio: 
-                        <span class="widget-plan__info">U$D 59 /mes</span>
+                        <span class="widget-plan__info precio">U$D 59 /mes</span>
                     </p>
                     <p class="widget-plan__label">Precio: 
-                        <span class="widget-plan__info">U$D 590 /año</span>
+                        <span class="widget-plan__info precio">U$D 590 /año</span>
                     </p>
                     
-                    <p class="widget-plan__label">incluye:
-                        <span class="widget-plan__info">
-                            Rutina de entrenamiento personalizada<br>
-                            Acceso a nuestra biblioteca de videos explicativos<br>
-                            Periodización del entrenamiento<br>
-                            Acceso exclusivo a nuestra comunidad de WhatsApp<br>
-                            Seguimiento semanal 1 a 1
-                        </span>
-                    </p>
-                    <a href="entrada.html" class="boton boton--secundario">Suscribirse</a>
+                    <p class="widget-plan__label">incluye: </p>
+
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/mancuernas1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Rutina de entrenamiento personalizada<br>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/video-marketing1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Acceso a nuestra biblioteca de videos explicativos
+                            </span>
+                        </p>
+                    </div>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/agenda1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Periodización del entrenamiento
+                            </span>
+                        </p>
+                    </div>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/comunidad (1)1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Acceso exclusivo a nuestra comunidad de WhatsApp
+                            </span>
+                        </p>
+                    </div>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/informe-medico1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Seguimiento semanal 1 a 1
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <a href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0" class="boton boton--secundario">Suscribirse</a>
                     
                 </li>
 
                 <li class="widget-plan">
-                    <h4 class="no-margin">Plan de entrenamiento y nutrición personalizado en línea</h4>
+                    <h4 class="no-margin">PLAN PREMIUM</h4>
+                    <!--<h4 class="no-margin">Plan de entrenamiento y nutrición personalizado en línea</h4>-->
+
                     <p class="widget-plan__label">Precio: 
-                        <span class="widget-plan__info">U$D 92 /mes</span>
-                        <span class="widget-plan__info">U$D 920 /año</span>
+                        <span class="widget-plan__info precio">U$D 92 /mes</span>
+                        <span class="widget-plan__info precio">U$D 920 /año</span>
                     </p>
-                    <p class="widget-plan__label">incluye:
-                        <span class="widget-plan__info">
-                            Rutina de entrenamiento personalizada<br>
-                            Plan de nutrición personalizado<br>
-                            Acceso a nuestra biblioteca de videos explicativos<br>
-                            Periodización del entrenamiento<br>
-                            Acceso exclusivo a nuestra comunidad de WhatsApp<br>
-                            Seguimiento semanal 1 a 1
-                        </span>
-                    </p>
-                    <a href="entrada.html" class="boton boton--secundario">Suscribirse</a>
+                    <p class="widget-plan__label">incluye: </p>
+
+                        <div class="renglon-plan">
+                            <div class="icono-plan">
+                                <img loading="lazy" src="img/iconos/mancuernas1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                            </div>
+                            <p class="interlineado-corto">
+                                <span class="widget-plan__info">
+                                    Rutina de entrenamiento personalizada<br>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="renglon-plan">
+                            <div class="icono-plan">
+                                <img loading="lazy" src="img/iconos/comida-dietetica1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                            </div>
+                            <p class="interlineado-corto">
+                                <span class="widget-plan__info">
+                                    Plan de nutrición personalizado
+                                </span>
+                            </p>
+                        </div>
+                        <div class="renglon-plan">
+                            <div class="icono-plan">
+                                <img loading="lazy" src="img/iconos/video-marketing1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                            </div>
+                            <p class="interlineado-corto">
+                                <span class="widget-plan__info">
+                                    Acceso a nuestra biblioteca de videos explicativos
+                                </span>
+                            </p>
+                        </div>
+                        <div class="renglon-plan">
+                            <div class="icono-plan">
+                                <img loading="lazy" src="img/iconos/agenda1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                            </div>
+                            <p class="interlineado-corto">
+                                <span class="widget-plan__info">
+                                    Periodización del entrenamiento
+                                </span>
+                            </p>
+                        </div>
+                        <div class="renglon-plan">
+                            <div class="icono-plan">
+                                <img loading="lazy" src="img/iconos/comunidad (1)1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                            </div>
+                            <p class="interlineado-corto">
+                                <span class="widget-plan__info">
+                                    Acceso exclusivo a nuestra comunidad de WhatsApp
+                                </span>
+                            </p>
+                        </div>
+                        <div class="renglon-plan">
+                            <div class="icono-plan">
+                                <img loading="lazy" src="img/iconos/informe-medico1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                            </div>
+                            <p class="interlineado-corto">
+                                <span class="widget-plan__info">
+                                    Seguimiento semanal 1 a 1
+                                </span>
+                            </p>
+                        </div>
+                    
+                    <a href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0" class="boton boton--secundario">Suscribirse</a>
                 </li>
 
                 <li class="widget-plan">
-                    <h4 class="no-margin">Plan de nutrición personalizado en línea</h4>
+                    <h4 class="no-margin">PLAN NUTRICIONAL</h4>
+                    <!--<h4 class="no-margin">Plan de nutrición personalizado en línea</h4>-->
                     <p class="widget-plan__label">Precio: 
-                        <span class="widget-plan__info">U$D 36 /mes</span>
+                        <span class="widget-plan__info precio">U$D 36 /mes</span>
                     </p>
                     
-                    <p class="widget-plan__label">incluye:
-                        <span class="widget-plan__info">
-                            Plan de alimentación personalizado<br>
-                            Dieta vegana, vegetariana, sin glúten, etc.<br>
-                            Seguimiento mensual vía whatsApp con nutricionista<br>
-                            
-                        </span>
-                    </p>
-                    <a href="entrada.html" class="boton boton--secundario">Suscribirse</a>
+                    <p class="widget-plan__label">incluye: </p>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/comida-dietetica1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Plan de alimentación personalizado
+                            </span>
+                        </p>
+                    </div>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/corazon-saludable1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Dieta vegana, vegetariana, sin glúten, etc.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="renglon-plan">
+                        <div class="icono-plan">
+                            <img loading="lazy" src="img/iconos/agenda1.png" alt="imagen icono entrenamiento" width="30px" height="30px">
+                        </div>
+                        <p class="interlineado-corto">
+                            <span class="widget-plan__info">
+                                Seguimiento mensual vía whatsApp con nutricionista
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <a href="https://api.whatsapp.com/message/LQWSKDRWON4TN1?autoload=1&app_absent=0" class="boton boton--secundario">Suscribirse</a>
                 </li>
-            </ul>
+                </ul>
+                <ol id="paginacion">
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="img/iconos/btnbanner2.png" alt="imagen seleccion banner" width="20px">
+                    </li>
+                </ol>
+                <div class="arrow" id="prev">
+                    <img loading="lazy" src="img/iconos/arrow1b.png" alt="imagen flecha" width="20px" height="25px">
+                </div>
+                <div class="arrow" id="next">
+                    <img loading="lazy" src="img/iconos/arrow2b.png" alt="imagen flecha" width="20px" height="25px">
+                </div>
+            </div>
+            
 
             <!--<div id="planes">
                 <picture>
@@ -209,10 +372,10 @@
 
             <div class="pregunta">
                 <p>¿para quiénes está dirigido este servicio?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
-                <p class="txt">
+                <p>
                     Para todas aquellas personas que busquen uno o varios de los siguientes objetivos: <br>
                     bajar de peso, <br>
                     aumentar la masa muscular, <br>
@@ -227,10 +390,10 @@
             </div>
             <div class="pregunta">
                 <p>¿Qué incluye la suscripción al servicio de personalizado en línea?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
-                <p class="txt">
+                <p>
                     Cuestionario previo para el armado del plan de entrenamiento y/o nutricional <br>
                     plan de entrenamiento y/o nutricional <br>
                     periodización del entrenamiento <br>
@@ -243,7 +406,7 @@
 
             <div class="pregunta">
                 <p>¿Qué tipo de entrenamientos online ofrecen?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -253,7 +416,7 @@
 
             <div class="pregunta">
                 <p>¿Dónde y cuándo se realizan los entrenamientos?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -263,7 +426,7 @@
 
             <div class="pregunta">
                 <p>¿Cuánto tiempo dura cada sesión de entrenamiento?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -273,7 +436,7 @@
 
             <div class="pregunta">
                 <p>¿Cuántos días a la semana debo entrenar?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -283,7 +446,7 @@
 
             <div class="pregunta">
                 <p>¿Se pueden hacer modificaciones en el plan si tengo una lesión o limitación física?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -293,7 +456,7 @@
 
             <div class="pregunta">
                 <p>¿Cuándo se realiza la entrevista para el armado de planes y cuando los obtengo una vez que me suscriba o active una suscripción?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -302,7 +465,7 @@
             </div>
             <div class="pregunta">
                 <p>¿Realizan reembolso del dinero en caso de cancelar la suscripción?</p>
-                <p>+</p>
+                <img loading="lazy" src="img/iconos/cruz.png" alt="imagen cruz" width="20px">
             </div>
             <div class="respuesta">
                 <p>
@@ -310,27 +473,66 @@
                     En caso de que igualmente desees darte de baja dentro de los primeros 7 días posteriores a la suscripción del mes corriente, se te reembolsará el 100% del costo total del dinero                    
                 </p>
             </div>
-
-
             
         </aside>
     </div>
 
+
+    <div class="contenedor-testimoniales" id="contenedortestimoniales">
+
+        <h2>Testimonios</h2>
+
+        <div class="testimoniales" id="testimoniales">
+
+            <picture class="testimonio">
+                <source loading="lazy"  srcset="img/testimonial1.jpg" type="image/webp">
+                <img loading="lazy" src="img/testimonial1.jpg" alt="imagen logo">
+            </picture>
+            <picture class="testimonio">
+                <source loading="lazy"  srcset="img/testimonial2.jpg" type="image/webp">
+                <img loading="lazy" src="img/testimonial1.jpg" alt="imagen logo">
+            </picture>
+            <picture class="testimonio">
+                <source loading="lazy"  srcset="img/testimonial1.jpg" type="image/webp">
+                <img loading="lazy" src="img/testimonial1.jpg" alt="imagen logo">
+            </picture>
+
+            <picture class="testimonio2">
+                <source loading="lazy"  srcset="img/testimonial2.jpg" type="image/webp">
+                <img loading="lazy" src="img/testimonial1.jpg" alt="imagen logo">
+            </picture>
+            <picture class="testimonio2">
+                <source loading="lazy"  srcset="img/testimonial1.jpg" type="image/webp">
+                <img loading="lazy" src="img/testimonial1.jpg" alt="imagen logo">
+            </picture>
+            <picture class="testimonio2">
+                <source loading="lazy"  srcset="img/testimonial2.jpg" type="image/webp">
+                <img loading="lazy" src="img/testimonial1.jpg" alt="imagen logo">
+            </picture>
+
+        </div>
+
+        <div class="arrow" id="prevt">
+            <img loading="lazy" src="img/iconos/arrow1b.png" alt="imagen flecha" width="20px" height="25px">
+        </div>
+        <div class="arrow" id="nextt">
+            <img loading="lazy" src="img/iconos/arrow2b.png" alt="imagen flecha" width="20px" height="25px">
+        </div>
+
+    </div>
+
+
     <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
+            <div class="barra_footer">
 
-
-                <picture class="letras">
+                <picture class="letrasf">
                     <source loading="lazy"  srcset="img/letras/letras_color1.png" type="image/webp">
                     <img loading="lazy" src="img/letras/letras_color1.png" alt="imagen logo">
                 </picture>
-                
-                <a href="creador.html" class="navegacion__enlace">creador</a>
 
-                <!--<a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Red<span class="logo__bold">Fit</span></h1>
-                </a>-->
+                <div class="contenedor_footer">
+                    <p class="texto_footer">Redfit SRL todos los derechos reservados</p>
+                </div>
 
                 <!--<nav class="navegacion">
                     <a href="index.html" class="navegacion__enlace">Por qué RedFit</a>
@@ -339,7 +541,6 @@
                     <a href="contacto.html" class="navegacion__enlace">Blog</a>
                 </nav>-->
             </div>
-        </div>
     </footer>
     
     <script src="js/modernizr.js"></script>
